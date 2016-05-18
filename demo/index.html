@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Superhero Turnip</title>
+    <link rel="stylesheet" href="//files.anpdm.com/tenko-core.css">
+</head>
+<body>
+
+    <!-- @TODO Remove the loading message once the application has bootstrapped -->
+    <div id="js-LoadingMessage" class="LoadingMessage">
+        <!-- @TODO: SMIL animations is deprecated. Could this be replaced with something more modern? -->
+        <img class="LoadingMessage-image" src="/src/images/grid.svg" alt="A pulsating grid of dots">
+        <p class="LoadingMessage-text">Loading...</p>
+    </div>
+    <div id="superhero-turnip">
+        <ui-view></ui-view>
+    </div>
+
+    <script src="/jspm_packages/system.js" charset="utf-8"></script>
+    <script src="/config.js" charset="utf-8"></script>
+    <script>
+        System.import('demo/demo.js');
+    </script>
+
+</body>
+</html>

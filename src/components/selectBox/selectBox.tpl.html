@@ -1,0 +1,11 @@
+<div class="st_Select">
+    <div class="st_Select-face"></div>
+    <select
+        class="st_Select-box"
+        ng-change="$ctrl.selectedItem($ctrl.selected)"
+        ng-options="item as item.label for item in $ctrl.options track by item.id"
+        ng-model="$ctrl.selected"
+    >
+        <option value="">--- Menu ---</option>
+    </select>
+</div>

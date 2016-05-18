@@ -1,0 +1,103 @@
+// @TODO
+// Make sure that LoadingMessage styling is loaded with FOUC
+.LoadingMessage {
+    // @TODO
+    // This would probably look better if it could be centered vertically and horizontally
+
+    &-image {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 16px;
+    }
+
+    &-text {
+        font-size: 1.5rem;
+    }
+}
+
+.Container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.Navigation {
+    // @TODO: Spread this out, list to the left, select to the right
+    margin-bottom: 3rem;
+
+    &-list {
+
+        & li {
+            display: inline-block;
+        }
+
+        & .is-active {
+            font-weight: bold;
+        }
+    }
+}
+
+.st_Select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+
+    &-face {
+        background-color: #e1e1e1;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+
+    &-box {
+        // @TODO Implement styling as http://take.ms/0h7uj
+        // @TODO This should fill the available space
+    }
+}
+
+.st_Icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+
+    &.st_Icon--xs {
+        width: .5em;
+        height: .5em;
+    }
+
+    &.st_Icon--sm {
+        width: .75em;
+        height: .75em;
+    }
+
+    &.st_Icon--md {
+        width: 1em;
+        height: 1em;
+    }
+
+    &.st_Icon--lg {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    &.st_Icon--xl {
+        width: 2em;
+        height: 2em;
+    }
+
+    &.st_Icon--xxl {
+        width: 3em;
+        height: 3em;
+    }
+}
+
+// Tenko augmentations
+.a_Panel {
+    padding: 20px;
+}
+
+body {
+    padding: 20px;
+}

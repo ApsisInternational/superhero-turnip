@@ -1,0 +1,38 @@
+{
+  "name": "superhero-turnip",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "npm test",
+    "postinstall": "jspm install"
+  },
+  "author": "Hampus Persson <hampus.persson@apsis.com>",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "apsis"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.22",
+    "babel-eslint": "^5.0.4",
+    "eslint": "^2.0.0",
+    "eslint-config-apsis": "^2.0.0",
+    "gulp": "3.9.0",
+    "gulp-config-apsis": "^2.0.0",
+    "jspm": "^0.16.0",
+    "jspm-git": "^0.4.0"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.5.5",
+      "angular-ui-router": "github:angular-ui/angular-ui-router-bower@^0.2.18",
+      "css": "github:systemjs/plugin-css@^0.1.21",
+      "text": "github:systemjs/plugin-text@^0.0.8"
+    },
+    "devDependencies": {
+      "angular-mocks": "github:angular/bower-angular-mocks@^1.5.5",
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "jasmine-expect": "npm:jasmine-expect@^2.0.2"
+    }
+  }
+}
