@@ -1,4 +1,4 @@
-export function selectCtrl() {
+function selectCtrl() {
     const vm = {
         ...this,
         selectedItem,

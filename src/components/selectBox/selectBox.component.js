@@ -1,4 +1,4 @@
-import { selectCtrl } from './selectBox.ctrl';
+
 import template from './selectBox.tpl.html!text';
 
 export const selectBox = {
