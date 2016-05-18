@@ -1,6 +1,18 @@
 SUPERHERO-TURNIP
 ========
 
+# Installation
+1. Clone this repo
+2. Run `$> npm install`
+
+# Usage
+You can use Gulp for most of your needs.
+
+- `gulp` to start a dev server on `localhost:9000/demo`
+- `gulp eslint` to lint
+- `gulp stylus` to compile stylus to css
+- `gulp test` to run test suite
+- `gulp help` to see a list of gulp commands
 
 # Todos
 
