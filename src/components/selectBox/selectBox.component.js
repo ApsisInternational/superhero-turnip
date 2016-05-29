@@ -10,7 +10,7 @@ export const selectBox = {
 
 
     bindings: {
-        options: '=options',
+        options: '=',
     },
     controller: selectCtrl,
     controllerAs: '$ctrl',

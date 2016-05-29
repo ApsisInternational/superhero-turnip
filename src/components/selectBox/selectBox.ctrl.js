@@ -1,4 +1,5 @@
-export function selectCtrl() {
+selectCtrl.$inject = ['$state'];
+export function selectCtrl($state) {
     const vm = {
         ...this,
         selectedItem,
@@ -8,6 +9,6 @@ export function selectCtrl() {
 
     function selectedItem(item) {
         // @TODO Let the implementation know that a change occured
-        console.log('changed', item)
+        $state.go(item.state);
     }
 }
