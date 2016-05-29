@@ -1,3 +1,4 @@
+homeCtrl.$inject = ['$state'];
 export function homeCtrl($state) {
     const vm = {
         ...this,

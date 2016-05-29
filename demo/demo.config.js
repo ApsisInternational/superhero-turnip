@@ -1,6 +1,7 @@
 import homeTemplate from './templates/home.tpl.html!text';
 import { homeCtrl } from './javascript/home.ctrl.js';
 
+demoConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 export function demoConfig($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('first/');
 

@@ -1,3 +1,5 @@
+iconCtrl.$inject = ['$element'];
+
 export function iconCtrl($element) {
     const vm = {...this};
 
