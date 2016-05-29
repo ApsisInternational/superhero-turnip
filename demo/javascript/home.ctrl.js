@@ -6,6 +6,7 @@ export function homeCtrl($state) {
         onChange(item) {
             $state.go(item.state);
         },
+        selected: {}
     };
 
     return vm;

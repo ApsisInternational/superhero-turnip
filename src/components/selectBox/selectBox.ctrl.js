@@ -1,4 +1,4 @@
-function selectCtrl() {
+export function selectCtrl() {
     const vm = {
         ...this,
         selectedItem,
@@ -8,5 +8,6 @@ function selectCtrl() {
 
     function selectedItem(item) {
         // @TODO Let the implementation know that a change occured
+        console.log('changed', item)
     }
 }

@@ -9,6 +9,7 @@
     margin-bottom: 3rem;
 
     &-list {
+		float: left;
 
         & li {
             display: inline-block;
@@ -24,6 +25,7 @@
     position: relative;
     display: inline-block;
     width: 200px;
+	float: right;
 
     &-face {
         background-color: #e1e1e1;
@@ -36,6 +38,14 @@
     &-box {
         // @TODO Implement styling as http://take.ms/0h7uj
         // @TODO This should fill the available space
+
+            background-color: transparent;
+            border: 0 none;
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
     }
 }
 
