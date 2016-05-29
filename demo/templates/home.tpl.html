@@ -3,8 +3,8 @@
         <nav class="Navigation">
             <ul class="Navigation-list">
                 <!-- @TODO Indicate active state -->
-                <li><a href="" ui-sref="home.first">First page</a></li>
-                <li><a href="" ui-sref="home.second">Second page</a></li>
+                <li><a href="" ui-sref="home.first" ui-sref-active="is-active">First page</a></li>
+                <li><a href="" ui-sref="home.second" ui-sref-active="is-active">Second page</a></li>
             </ul>
             <st-select options="$ctrl.options" on-change="$ctrl.onChange(item)"></st-select>
         </nav>
