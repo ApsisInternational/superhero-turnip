@@ -8,11 +8,10 @@ export const selectBox = {
     // bindings
     // controller
 
-
     bindings: {
-        options: '=',
+        options: '<',
+        onChange: '&',
     },
     controller: selectCtrl,
-    controllerAs: '$ctrl',
     template: template,
 };

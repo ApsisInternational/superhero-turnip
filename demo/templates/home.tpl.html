@@ -6,6 +6,8 @@
                 <li><a href="" ui-sref="home.first" ui-sref-active="is-active">First page</a></li>
                 <li><a href="" ui-sref="home.second" ui-sref-active="is-active">Second page</a></li>
             </ul>
+            <!-- AM: ambiguity: $ctrl is controllerAs in .state('home') -->
+            <!-- AM: it is also default alias name used by AngJS 1.5 for components -->
             <st-select options="$ctrl.options" on-change="$ctrl.onChange(item)"></st-select>
         </nav>
         <ui-view></ui-view>
