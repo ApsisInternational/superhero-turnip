@@ -17,6 +17,6 @@ function moduleRun(aIconService) {
 
 angular.element(document)
     .ready(() => {
-        document.querySelector('#js-LoadingMessage').style.display = 'none';
+        document.querySelector('#js-LoadingMessage').remove();
         return angular.bootstrap(appEl, [module.name], { strictDi: true });
     });
