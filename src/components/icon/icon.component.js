@@ -6,7 +6,7 @@ export const icon = {
         size: '@?',
     },
     controller: iconCtrl,
-    template: '<svg class="st_Icon"><use xlink:href="#icon-"></use></svg>',
+    template: '<svg class="st_Icon st_Icon--{{$ctrl.size}}"><use xlink:href="" ng-href="#icon-{{$ctrl.icon}}"></use></svg>',
 };
 
 export { iconService } from './icon.service';

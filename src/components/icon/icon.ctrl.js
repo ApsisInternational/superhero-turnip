@@ -1,3 +1,5 @@
+iconCtrl.$inject = ['$element'];
+
 export function iconCtrl($element) {
     const vm = {...this};
 
@@ -6,6 +8,9 @@ export function iconCtrl($element) {
     return vm;
 
     function updateDomElement() {
+        let svgEl = $element.find('svg');
+        let useEl = svgEl.find('use');
+
         // @TODO
         // 1. Get the svg element in the element
         // 2. Get the use element inside the svg

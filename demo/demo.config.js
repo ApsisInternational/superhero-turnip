@@ -1,6 +1,7 @@
 import homeTemplate from './templates/home.tpl.html!text';
 import { homeCtrl } from './javascript/home.ctrl.js';
 
+demoConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 export function demoConfig($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('first/');
 
@@ -16,7 +17,7 @@ export function demoConfig($stateProvider, $urlRouterProvider) {
             url: 'first/',
             template: `
             <h1>
-                <st-icon icon="apsis-product-logo" size="m"></st-icon>
+                <st-icon icon="apsis-product-logo" size="md"></st-icon>
                 First Page
             </h1>
             `,
@@ -25,6 +26,7 @@ export function demoConfig($stateProvider, $urlRouterProvider) {
             url: 'second/',
             template: `
             <h1>
+                <st-icon icon="apsis-product-logo" size="md"></st-icon>
                 Second Page
             </h1>
             `,
@@ -39,6 +41,7 @@ export function demoConfig($stateProvider, $urlRouterProvider) {
                 url: 'profile/',
                 template: `
                 <h1>
+                    <st-icon icon="apsis-product-logo" size="md"></st-icon>
                     Settings Page
                 </h1>
                 `,
@@ -47,6 +50,7 @@ export function demoConfig($stateProvider, $urlRouterProvider) {
                 url: 'account/',
                 template: `
                 <h1>
+                    <st-icon icon="apsis-product-logo" size="md"></st-icon>
                     Account Page
                 </h1>
                 `,

@@ -1,3 +1,5 @@
+iconService.$inject = ['$http'];
+
 export function iconService($http) {
     const loadedPaths = [];
 

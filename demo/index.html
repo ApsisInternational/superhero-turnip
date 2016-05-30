@@ -4,13 +4,77 @@
     <meta charset="UTF-8">
     <title>Superhero Turnip</title>
     <link rel="stylesheet" href="//files.anpdm.com/tenko-core.css">
+
+    <style>
+        .LoadingMessage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            box-sizing: content-box;
+            flex-flow: column nowrap;
+        }
+
+        .LoadingMessage-image {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 16px;
+            }
+
+        .LoadingMessage-text {
+             font-size: 1.5rem;
+         }
+
+        @keyframes st-pulse {
+            0 {opacity: 0;}
+            50% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+        .ttt-loader {
+            display: flex;
+            flex-flow: row wrap;
+            width: 18vw;
+            height: 18vw;
+            padding: 3vw;
+            margin: 1vw;
+            border-radius: 2vw;
+            background-color: silver;
+        }
+        .ttt-loader i {
+            width: 2vw;
+            height: 2vw;
+            margin: 1vw;
+            border-radius: 0.99vw;
+            background-color: #eb8e47;
+            flex-grow: 1;
+        }
+        .ttt-loader i:nth-child(5n) {animation: st-pulse .6s .1s linear infinite;}
+        .ttt-loader i:nth-child(5n+1) {animation: st-pulse .6s .2s linear infinite;}
+        .ttt-loader i:nth-child(5n+2) {animation: st-pulse .6s .3s linear infinite;}
+        .ttt-loader i:nth-child(5n+3) {animation: st-pulse .6s .4s linear infinite;}
+        .ttt-loader i:nth-child(5n+4) {animation: st-pulse .6s .5s linear infinite;}
+    </style>
+
 </head>
 <body>
 
     <!-- @TODO Remove the loading message once the application has bootstrapped -->
     <div id="js-LoadingMessage" class="LoadingMessage">
         <!-- @TODO: SMIL animations is deprecated. Could this be replaced with something more modern? -->
-        <img class="LoadingMessage-image" src="/src/images/grid.svg" alt="A pulsating grid of dots">
+
+        <div class="ttt-loader">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+
+        <!--<img class="LoadingMessage-image" src="/src/images/grid.svg" alt="A pulsating grid of dots"/>-->
         <p class="LoadingMessage-text">Loading...</p>
     </div>
     <div id="superhero-turnip">

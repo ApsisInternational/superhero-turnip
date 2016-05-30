@@ -10,11 +10,13 @@ const module = angular.module('superhero-turnip-demo', ['ng', 'ui.router', super
     .config(demoConfig)
     .run(moduleRun);
 
+moduleRun.$inject = ['stIconService'];
 function moduleRun(aIconService) {
     aIconService.loadIconDefs('//files.anpdm.com/svgdefs.svg');
 }
 
 angular.element(document)
     .ready(() => {
+        document.querySelector('#js-LoadingMessage').remove();
         return angular.bootstrap(appEl, [module.name], { strictDi: true });
     });

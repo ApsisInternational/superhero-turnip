@@ -1,6 +1,6 @@
 import 'jasmine-expect';
 
-import { iconService } from 'icon';
+import { iconService } from '/src/components/icon/icon.service';
 
 // @TODO: Add tests for icon service
 describe('Icon service', () => {
