@@ -8,7 +8,9 @@ export function iconCtrl($element) {
     return vm;
 
     function updateDomElement() {
-        console.log($element.find('svg').find('use'))
+        let svgEl = $element.find('svg');
+        let useEl = svgEl.find('use');
+
         // @TODO
         // 1. Get the svg element in the element
         // 2. Get the use element inside the svg

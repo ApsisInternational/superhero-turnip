@@ -10,6 +10,8 @@ module.exports = function karmaConfig(config) {
 
         jspm: {
             loadFiles: [
+                'jspm_packages/github/angular/bower-angular@1.5.5',
+                'jspm_packages/github/angular/bower-angular-mocks@1.5.5',
                 'test/unit/**/*.js',
             ],
             serveFiles: [
@@ -47,5 +49,10 @@ module.exports = function karmaConfig(config) {
 
         logLevel: config.LOG_ERROR,
 
+        systemjs: {
+            files: [
+
+            ]
+        }
     });
 };
